@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    android:id="@+id/layout_fpw"
+    tools:context=".FPwActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/fpwmsg"
+        android:layout_width="543dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="52dp"
+        android:text="Endişelenmeyin, buradayız!"
+        android:textColor="@color/textColor"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/fpweposta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fpwlogin"
+        android:layout_width="137dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="189dp"
+        android:background="@drawable/buttonarkaplan"
+        android:backgroundTint="@color/purple_200"
+        android:text="Giriş Yap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fpwbutton"
+        android:layout_width="160dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/buttonarkaplan"
+        android:backgroundTint="@color/purple_200"
+        android:text="Parolayı Sıfırla"
+        app:layout_constraintBottom_toTopOf="@+id/fpwlogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/fpweposta"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/edittextarkaplan"
+        android:ems="10"
+        android:hint="E-postanızı giriniz."
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/fpwbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fpwbaslik"
+        android:layout_width="394dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="21dp"
+        android:text="Parolanızı Mı Unuttunuz?"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/fpwmsg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

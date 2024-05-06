@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_list"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/altHedefEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#FFFFFF"
+        android:hint="Alt Hedef Ekle" />
+
+    <ListView
+        android:id="@+id/altHedefListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:longClickable="true"
+        android:choiceMode="singleChoice"
+        android:textColorHint="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/altHedefEkleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ekle"
+        android:layout_marginTop="16dp"/>
+
+
+
+
+</LinearLayout>

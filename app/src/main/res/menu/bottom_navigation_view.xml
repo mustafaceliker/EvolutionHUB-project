@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:title="Ana Sayfa"
+        android:icon="@drawable/ic_home" />
+
+    <item
+        android:id="@+id/navigation_daily_activities"
+        android:title="Günlük Aktiviteler"
+        android:icon="@drawable/ic_daily_progress" />
+
+    <item
+        android:id="@+id/navigation_analysis"
+        android:title="Analiz"
+        android:icon="@drawable/ic_analysis" />
+
+    <item
+        android:id="@+id/navigation_motivation"
+        android:title="Motivasyon"
+        android:icon="@drawable/ic_motivation" />
+
+    <item
+        android:id="@+id/navigation_logout"
+        android:title="Çıkış"
+        android:icon="@drawable/ic_logout" />
+</menu>

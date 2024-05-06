@@ -1,0 +1,16 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="#FFFFFF" /> <!-- Arkaplan rengi -->
+            <corners android:radius="10dp" /> <!-- Köşe yuvarlatma -->
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <solid android:color="#3E2B7E" /> <!-- İlerleme rengi -->
+                <corners android:radius="10dp" /> <!-- Köşe yuvarlatma -->
+            </shape>
+        </clip>
+    </item>
+</layer-list>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context=".LoginActivity"
+    android:id="@+id/layout_login"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/girissifre"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edittextarkaplan"
+        android:ems="10"
+        android:hint="Şifrenizi giriniz."
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/girisparolamiunuttum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/girissignup"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="12dp"
+        android:drawableLeft="@drawable/uekle"
+        android:text="Yeni Üyelik"
+        android:textColor="@color/textColor"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/giriseposta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/girisparolamiunuttum"
+        android:layout_width="201dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="176dp"
+        android:drawableLeft="@drawable/kilit"
+        android:text="Şifremi unuttum."
+        android:textColor="@color/textColor"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/girislogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/girislogin"
+        android:layout_width="129dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="275dp"
+        android:layout_marginBottom="63dp"
+        android:background="@drawable/buttonarkaplan"
+        android:backgroundTint="@color/purple_200"
+        android:text="Giriş Yap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/giriseposta"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittextarkaplan"
+        android:ems="10"
+        android:hint="E-postanızı giriniz."
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/girissifre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/giristext"
+        android:layout_width="214dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="15dp"
+        android:text="Hoşgeldiniz"
+        android:textColor="@color/textColor"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/girissignup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/girislogo"
+        android:layout_width="wrap_content"
+        android:layout_height="246dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/giristext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/hublogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context=".SignupActivity"
+    android:id="@+id/layout_signup"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/guncelletext"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="14dp"
+        android:text="Yeni EvoH Üyeliği"
+        android:textColor="@color/textColor"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/uyeolisim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uyeollogo" />
+
+    <EditText
+        android:id="@+id/uyeolisim"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="73dp"
+        android:background="@drawable/edittextarkaplan"
+        android:ems="10"
+        android:hint="Ad-Soyad Giriniz"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/uyeoleposta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guncelletext" />
+
+    <EditText
+        android:id="@+id/uyeoleposta"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/edittextarkaplan"
+        android:ems="10"
+        android:hint="E-postanızı giriniz"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/uyeolsifre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uyeolisim" />
+
+    <EditText
+        android:id="@+id/uyeolsifre"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="73dp"
+        android:background="@drawable/edittextarkaplan"
+        android:ems="10"
+        android:hint="Şifrenizi giriniz."
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uyeoleposta" />
+
+    <Button
+        android:id="@+id/uyeolkaydet"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="243dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/buttonarkaplan"
+        android:backgroundTint="@color/purple_200"
+        android:text="Kaydet"
+        app:layout_constraintBottom_toTopOf="@+id/uyeollogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/uyeollogin"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="245dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/buttonarkaplan"
+        android:backgroundTint="@color/purple_200"
+        android:text="Giriş Yap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/uyeollogo"
+        android:layout_width="175dp"
+        android:layout_height="154dp"
+        android:layout_marginEnd="277dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/guncelletext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hublogo" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAcceptTerms"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:buttonTint="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/termsText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uyeolsifre" />
+
+    <TextView
+        android:id="@+id/termsText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="70dp"
+        android:text="Kullanım ve gizlilik koşullarını kabul ediyorum."
+        android:textColor="@color/textColor"
+        app:layout_constraintBottom_toTopOf="@+id/uyeolkaydet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxAcceptTerms"
+        app:layout_constraintTop_toBottomOf="@+id/uyeolsifre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string-array name="kategoriler">
+        <item>İş</item>
+        <item>Kişisel</item>
+        <item>Eğlence</item>
+        <item>Diğer</item>
+    </string-array>
+</resources>

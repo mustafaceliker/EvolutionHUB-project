@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_list"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/detayIsimTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/textColor"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/detayAciklamaTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_marginBottom="8dp"/>
+
+
+    <TextView
+        android:id="@+id/detayBaslangicTarihTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/detayBitisTarihTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Yeni eklenen TextView -->
+    <TextView
+        android:id="@+id/kalanSureTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_marginBottom="8dp"
+        android:textColorHint="#FFFFFF"/>
+
+    <!-- Yeni eklenen ProgressBar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:max="100"
+        android:textColor="@color/textColor" />
+
+    <ListView
+        android:id="@+id/altHedefListView"
+        android:layout_width="match_parent"
+        android:layout_height="318dp"
+        android:layout_marginBottom="16dp"
+        android:divider="@android:color/white"
+        android:dividerHeight="0.5dp"
+        android:textColor="@color/textColor"
+        android:textColorHint="#FFFFFF"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/altHedefEkleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/alt_hedef_ekle"
+        android:onClick="onAltHedefEkleButtonClick"
+        android:src="@android:drawable/ic_menu_add" />
+
+    <Button
+        android:id="@+id/hedefSilButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/hedefSilButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Sil" />
+
+</LinearLayout>
