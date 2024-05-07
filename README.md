@@ -1,0 +1,1 @@
+This is a goal tracking and personal assistant program that I wrote in the Kotlin programming language. A person can record daily or longer goals and add subgoals. He can also watch charts and graphs to keep track of these goals. It also has a pedometer feature. Perfect for making a habit!
