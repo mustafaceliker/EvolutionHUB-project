@@ -1,36 +1,58 @@
 # EvolutionHUB
 
-Android uygulaması: alışkanlık takibi ve kişisel hedef yönetimi. Günlük veya uzun vadeli hedefler tanımlanabilir, alt hedefler eklenebilir; ilerleme grafik ve çizelgelerle takip edilebilir. Adım sayar (pedometer) özelliği içerir.
+> Android application for habit tracking and personal goal management — set goals, track progress, and build better daily routines.
 
-## Özellikler
+[![Language](https://img.shields.io/badge/language-Kotlin-7F52FF)](https://kotlinlang.org/)
+[![Platform](https://img.shields.io/badge/platform-Android-3DDC84)](https://developer.android.com/)
+[![Build](https://img.shields.io/badge/build-Gradle-02303A)](https://gradle.org/)
+[![License](https://img.shields.io/badge/license-educational-orange)](#)
 
-- Günlük ve uzun vadeli hedef tanımlama
-- Alt hedefler (subgoals)
-- Grafik ve çizelgelerle ilerleme takibi
-- Pedometer (adım sayar) entegrasyonu
-- Alışkanlık takibi için basit ve kullanışlı arayüz
+---
 
-## Teknolojiler
+## Overview
 
-- **Dil:** Kotlin  
-- **Build:** Gradle (Kotlin DSL)  
-- **Platform:** Android  
+EvolutionHUB is an Android app that helps users define and track daily or long-term goals. Goals can be broken down into sub-goals, and progress is visualized through charts and timelines. A built-in pedometer adds activity tracking to the experience.
 
-## Kurulum ve çalıştırma
+---
 
-1. Repoyu klonlayın:
+## Features
+
+- Define daily and long-term goals
+- Break goals into sub-goals for granular tracking
+- Visualize progress with charts and timelines
+- Built-in pedometer (step counter) integration
+- Clean and intuitive interface
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Language | Kotlin |
+| Build System | Gradle (Kotlin DSL) |
+| Platform | Android |
+
+---
+
+## Getting Started
+
+1. Clone the repository:
    ```bash
    git clone https://github.com/mustafaceliker/EvolutionHUB-project.git
    cd EvolutionHUB-project
    ```
-2. Android Studio ile projeyi açın.
-3. Gradle sync tamamlandıktan sonra bir emülatör veya cihaz seçip **Run** ile çalıştırın.
+2. Open the project in **Android Studio**.
+3. Wait for Gradle sync to complete.
+4. Select an emulator or physical device and click **Run**.
 
+**Build from command line:**
 ```bash
-# Komut satırından derlemek için
 ./gradlew assembleDebug
 ```
 
-## Lisans
+---
 
-Bu proje eğitim ve kişisel kullanım amaçlıdır.
+## License
+
+This project is developed for educational and personal use.
